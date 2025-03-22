@@ -1,0 +1,177 @@
+.todo-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.todo-title {
+  text-align: center;
+}
+
+.App.dark .todo-title {
+  color: #ffffff; /* Ensure the heading is white in dark mode */
+}
+
+.todo-input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.todo-add-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todo-add-button:hover {
+  background-color: #218838;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.todo-text {
+  flex: 1;
+}
+
+.todo-delete-button {
+  background-color: #f18590;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.todo-delete-button:hover {
+  background-color: #cf4e5b;
+}
+
+.todo-number {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.App.light {
+  background-color: #ffffff;
+  color: #000000;
+  min-height: 100vh;
+}
+
+.App.dark {
+  background-color: #2c2c2c; /* Changed to a dark gray color */
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.todo-container.light {
+  background-color: #f9f9f9;
+  color: #000000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-container.dark {
+  background-color: #3a3a3a; /* Changed to a slightly lighter dark gray */
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.theme-toggle-button {
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Align to the right side of the page */
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #555555; /* Neutral gray for dark mode */
+  color: white;
+}
+
+.theme-toggle-button:hover {
+  background-color: #777777; /* Slightly lighter gray on hover */
+}
+
+.App.light .theme-toggle-button {
+  background-color: #444444;
+  color: white;
+}
+
+.App.light .theme-toggle-button:hover {
+  background-color: #273543;
+}
+
+.App.dark .theme-toggle-button {
+  background-color: #444444;
+  color: white;
+}
+
+.App.dark .theme-toggle-button:hover {
+  background-color: #666666;
+}
+
+.todo-edit-button {
+  background-color: #d6bd71;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 10px; /* Add space between edit and delete buttons */
+}
+
+.todo-edit-button:hover {
+  background-color: #e0a800;
+}
+
+.todo-save-button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.todo-save-button:hover {
+  background-color: #218838;
+}
+
+.todo-edit-input {
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+}
